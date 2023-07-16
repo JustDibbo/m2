@@ -55,7 +55,6 @@ nav li a {
 .bannerp {
     color: #727272;
     margin-top: 16px;
-    margin-bottom: 30px;
 }
 
 .prybtn {
@@ -67,11 +66,62 @@ nav li a {
     font-size: 20px;
     font-weight: 600px;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .navimg {
     width: 100%;
 }
+
+/* header end */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.teamsimg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.teamscon {
+    max-width: 530px;
+}
+
+.paragraph {
+    color: #727272;
+}
+
+.teamst {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.aa {
+    color: #727272;
+    font-weight: 500;
+}
+
+.ab {}
+
+.ac {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
 
 /* responsive sec header */
 
@@ -83,17 +133,37 @@ nav li a {
     nav {
         flex-direction: column;
     }
+
+    .teams {
+        flex-direction: column;
+    }
+
+    .teamsimg {
+        grid-template-columns: 1fr;
+    }
+
+    .teamscon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+    }
 }
 
 @media screen and (min-width: 576.1px) and (max-width: 960px) {
     header {
         padding: 55px;
     }
+
     nav {
         flex-direction: column;
     }
+
     .navt {
         margin-bottom: 30px;
     }
+    
+    .teams {
+        flex-direction: column;
+    }
 }
-/* header end */
